@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Expense Tracker Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="expense-dashboard.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="logo">ET</div>
+          <div class="title">ExpenseTracker</div>
+        </div>
+        <nav class="nav">
+          <a class="active">Dashboard</a>
+          <a>Transactions</a>
+          <a>Budgets</a>
+          <a>Reports</a>
+          <a>Settings</a>
+        </nav>
+        <div class="sidebar-footer">© 2026</div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div class="search">
+            <input placeholder="Search transactions, categories..." />
+          </div>
+          <div class="top-actions">
+            <button class="btn primary">Add Expense</button>
+            <div class="avatar">T</div>
+          </div>
+        </header>
+        <!-- Header Section -->
+        <section class="header-section">
+          <h1 class="app-title">My Expense Tracker</h1>
+          <p class="app-subtitle">Track your monthly spending</p>
+        </section>
+
+        <!-- Summary Cards Section -->
+        <section class="summary">
+          <div class="cards">
+            <div class="card">
+              <div class="card-title">Total Spent</div>
+              <div class="card-value">$1,180.00</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Highest Category</div>
+              <div class="card-value">Shopping</div>
+            </div>
+            <div class="card">
+              <div class="card-title">Current Month</div>
+              <div class="card-value">February 2026</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="layout">
+          <div class="panel chart-panel">
+            <div class="panel-header">
+              <h3>Spending Overview</h3>
+              <div class="range">Feb 2026</div>
+            </div>
+            <div class="chart">
+              <div class="bars">
+                <div class="bar" data-value="$24"><div class="bar-value">$24</div><span style="height:12%"></span><small>Mon</small></div>
+                <div class="bar" data-value="$70"><div class="bar-value">$70</div><span style="height:35%"></span><small>Tue</small></div>
+                <div class="bar" data-value="$110"><div class="bar-value">$110</div><span style="height:55%"></span><small>Wed</small></div>
+                <div class="bar" data-value="$160"><div class="bar-value">$160</div><span style="height:80%"></span><small>Thu</small></div>
+                <div class="bar" data-value="$96"><div class="bar-value">$96</div><span style="height:48%"></span><small>Fri</small></div>
+                <div class="bar" data-value="$44"><div class="bar-value">$44</div><span style="height:22%"></span><small>Sat</small></div>
+                <div class="bar" data-value="$120"><div class="bar-value">$120</div><span style="height:60%"></span><small>Sun</small></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel transactions-panel">
+            <div class="panel-header">
+              <h3>Recent Transactions</h3>
+              <a class="view-all">View all</a>
+            </div>
+            <ul class="transactions">
+              <li>
+                <div class="tx-left"><div class="dot food"></div><div class="tx-meta"><strong>Cafe Latte</strong><small>Food & Drink</small></div></div>
+                <div class="tx-right">-$4.50</div>
+              </li>
+              <li>
+                <div class="tx-left"><div class="dot shop"></div><div class="tx-meta"><strong>Groceries</strong><small>Supermarket</small></div></div>
+                <div class="tx-right">-$86.30</div>
+              </li>
+              <li>
+                <div class="tx-left"><div class="dot salary"></div><div class="tx-meta"><strong>Paycheck</strong><small>Income</small></div></div>
+                <div class="tx-right income">+$3,500.00</div>
+              </li>
+              <li>
+                <div class="tx-left"><div class="dot transport"></div><div class="tx-meta"><strong>Gas</strong><small>Transport</small></div></div>
+                <div class="tx-right">-$45.00</div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Expense Categories Section -->
+        <section class="categories panel">
+          <div class="panel-header">
+            <h3>Expense Categories</h3>
+          </div>
+          <ul class="category-list">
+            <li><span class="cat-name">Food</span><span class="cat-amt">$320.00</span></li>
+            <li><span class="cat-name">Transport</span><span class="cat-amt">$90.00</span></li>
+            <li><span class="cat-name">Shopping</span><span class="cat-amt">$540.00</span></li>
+            <li><span class="cat-name">Entertainment</span><span class="cat-amt">$230.00</span></li>
+          </ul>
+        </section>
+
+        <footer class="footer">Simple static dashboard — HTML & CSS only</footer>
+      </main>
+    </div>
+  </body>
+</html>
